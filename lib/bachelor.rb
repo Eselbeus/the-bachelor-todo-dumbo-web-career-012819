@@ -42,6 +42,7 @@ def get_occupation(data, hometown)
     contestants.each do |contestant|
       contestant.each do |keys, values|
         if hometown == values
+          binding.pry
           return contestant["occupation"]
         end
       end
